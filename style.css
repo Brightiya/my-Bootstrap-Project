@@ -1,0 +1,12 @@
+/*
+body {
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+}
+/* class selector; it grabs the HTML with a class lastResult and makes it white and add padding to it*/
+.lastResult {
+    color: white;
+    padding: 3px;
+}

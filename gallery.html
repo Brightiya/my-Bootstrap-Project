@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a website of practice">
+    <meta name="keywords" content="website demo,practice website, using bootstrap for website practice">
+    <meta name="author" content="Bright Iyahen Osahenehn">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="600">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>My Bootstrap Project</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li>
+                <a class="nav-link active" href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="game.html">Game</a>
+                </li>
+
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-primary" type="button">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div id="demo" class="carousel slide container-fluid mt-5 " data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    </div>
+    <hr>
+    <div class="carousel-inner container-fluid mt-3">
+        <div class="carousel-item w-auto">
+            <img src="Tony5.jpg" alt="Photo3" class="d-block" width="500" height="500">
+        <div class="carousel-caption"><h1>Bright</h1>
+            <h2 class="text-center">He is an intelligent computer Scientist from the University of London</h2></div></div>
+        <div class="carousel-item w-auto">
+            <img src="Tony4.jpg" alt="Photo4" class="d-block" width=500" height="500"></div>
+        <div class="carousel-item w-auto">
+            <img src="Tony5.jpg" alt="Photo5" class="d-block" width="500" height="500" ></div>
+
+        <div class="carousel-item w-auto">
+            <img src="Tony7.jpg" alt="Photo6" class="d-block" width="500" height="500" ></div>
+        <div class="carousel-item active w-auto">
+            <img src="Tony8.jpg" alt="Photo7" class="d-block" width= "500" height="500"></div>
+    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span></button>
+</div>
+<div class="container mt-3">
+    <h2 class="text-success">Beautiful Images</h2>
+    <img src="cinqueterre.jpeg" class="rounded " alt="Cinque Terre" width="304" height="236">
+    <img src="img_5terre.jpeg" class="rounded" alt="Cinque Terre" width="304" height="236">
+    <img src="paris.jpeg" class="rounded" alt="Cinque Terre" width="304" height="236">
+    <img src="img_forest.jpeg" class="rounded" alt="Cinque Terre" width="304" height="236">
+</div>
+
+</body>
+</html>

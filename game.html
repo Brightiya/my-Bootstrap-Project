@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a website of practice">
+    <meta name="keywords" content="website demo,practice website, using bootstrap for website practice">
+    <meta name="author" content="Bright Iyahen Osahenehn">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="game.js" defer></script>
+    <title>My Bootstrap Project</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a class="nav-link active" href="game.html">Game</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-primary" type="button">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!--creates number guessing heading and paragraph -->
+<div class="container-fluid p-5  my-5 border bg-info text-white text-center mt-5">
+    <h2 id="greet"></h2>
+    <h1>Number guessing game</h1>
+</div>
+
+
+<p class="container">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+<!--creates a  div form field where the user can enter number b/w 1 and 100 -->
+<div class="form container">
+    <label for="guessField">Enter a guess: </label>
+    <input type="text" id="guessField" class="guessField">
+    <input type="submit" value="Submit guess" class="guessSubmit">
+</div>
+<!--Creates a div and p element to store the result of the guesses and tells user if low or high number -->
+<div class="resultParas container" >
+    <p class="guesses"></p>
+    <p class="lastResult"></p>
+    <p class="lowOrHi"></p>
+</div>
+</body>
+</html>
